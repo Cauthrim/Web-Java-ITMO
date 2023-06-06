@@ -1,0 +1,270 @@
+:root {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: rgb(34, 34, 34);
+
+    --border-color: rgb(185, 185, 185);
+    --boder: 1px solid var(--border-color);
+    --border-radius: 6px;
+    --caption-color: #3B5998;
+}
+
+html {
+    min-width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: calc(24px + 0.5rem);
+    right: 0;
+}
+
+header nav {
+    border: var(--boder);
+    border-radius: var(--border-radius);
+    margin: 0.5rem 0 2rem 0;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-right: 1rem;
+}
+
+.middle {
+    display: flow-root;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+aside section {
+    border: var(--boder);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+aside section .header {
+    border-bottom: var(--boder);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→ ";
+    font-size: 1.1rem;
+}
+
+aside section .body {
+    padding: 0.25rem;
+}
+
+aside section .footer {
+    border-top: var(--boder);
+    padding: 0.25rem;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+main {
+    margin-right: 21rem;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: var(--boder);
+    text-align: center;
+}
+
+.user_card {
+    border: var(--boder);
+    border-radius: var(--border-radius);
+}
+
+.user_card h2 {
+    padding-left: 0.5rem;
+}
+
+.user_card ul {
+    padding-bottom: 0.3rem;
+}
+
+.user_card .picture {
+    display: inline-block;
+    height: 100%;
+    vertical-align: center;
+    position: relative;
+    top: 0.5rem;
+    float: right;
+}
+
+.arrows {
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #A4A4A4;
+}
+
+.arrows a {
+    text-decoration: none;
+}
+
+.colored_user {
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.current_menu {
+    text-decoration: underline #3b5998;
+    text-decoration-thickness: 3px;
+}
+
+article .title {
+    font-weight: bold;
+    font-size: 1.45em;
+    color: #3b59a4;
+}
+
+article .body {
+    font-size: 1em;
+    border-left: 0.25em solid #b9b9b9;
+    padding-left: 0.8em;
+}
+
+article .information {
+    font-size: 0.98em;
+    color: #888888;
+}
+
+article .attachment {
+    padding: 0;
+    list-style-type: none;
+}
+
+article .attachment li {
+    line-height: 1.5em;
+    font-size: 0.9em;
+    color: #888888;
+    padding-left: calc(16px + 0.2em);
+    background: no-repeat url("../img/paperclip-16x16.png");
+}
+
+article .footer {
+    position: relative;
+    top: -0.7em;
+    line-height: 2.5em;
+    border: 1px solid #b9b9b9;
+    border-radius: 6px;
+}
+
+article .footer .positive-score {
+    position: relative;
+    right: 1em;
+    top: -0.10em;
+    font-weight: bold;
+    font-size: 1em;
+    color: #008000;
+}
+
+article .footer .left [alt="Vote Up"] {
+    position: relative;
+    top: 0.36em;
+}
+
+article .footer .left [alt="Vote Down"] {
+    position: relative;
+    top: 0.3em;
+}
+
+article .footer .right [alt="Publish Time"] {
+    position: relative;
+    top: 0.16em;
+}
+
+article .footer .right [alt="Comments"] {
+    position: relative;
+    padding-left: 0.5em;
+    top: 0.12em;
+}
+
+article .footer .right, .left {
+    display: inline-block;
+}
+
+article .footer .right {
+    position: absolute;
+    right: 1%;
+}
+
+article .footer .left {
+    margin-left: 0.6em;
+}
+
+.datatable table {
+    border-collapse: collapse;
+    text-align: center;
+    height: 8.7em;
+    width: 100%;
+    border: 1.5px solid #e1e1e1;
+}
+
+.datatable table tr, th, td {
+    font-size: 0.9em;
+    border: 1.5px solid #e1e1e1;
+}
+
+.datatable table th {
+    height: 1.8em;
+}
+
+.datatable .caption {
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    height: 1.3em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #e1e1e1;
+}
+
+.datatable table tbody tr:nth-child(2n-1) {
+    background-color: #f8f8f8;
+}
+
+.arrows a {
+    color: #3b59a4;
+}
